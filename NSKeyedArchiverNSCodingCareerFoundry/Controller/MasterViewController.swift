@@ -30,6 +30,11 @@ class MasterViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
+        if let path = filePath {
+            if let array = NSKeyedUnarchiver.unarchiveObject(withFile: path) as? [AnyObject] {
+                objects = array
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +45,9 @@ class MasterViewController: UITableViewController {
     @objc
     func insertNewObject(_ sender: Any) {
         objects.insert(NSDate(), at: 0)
+        if let path = filePath {
+            NSKeyedArchiver.archiveRootObject(objects, toFile: path)
+        }
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
     }

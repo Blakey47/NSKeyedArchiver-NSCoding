@@ -13,6 +13,7 @@
 		A72E2EEE2024CD5300159105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72E2EEC2024CD5300159105 /* Main.storyboard */; };
 		A72E2EF02024CD5300159105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72E2EEF2024CD5300159105 /* Assets.xcassets */; };
 		A72E2EF32024CD5300159105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72E2EF12024CD5300159105 /* LaunchScreen.storyboard */; };
+		A72E2EFF2024F09600159105 /* MainViewController+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72E2EFE2024F09600159105 /* MainViewController+FileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A72E2EEF2024CD5300159105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A72E2EF22024CD5300159105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A72E2EF42024CD5300159105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72E2EFE2024F09600159105 /* MainViewController+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+FileManager.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		A72E2EE52024CD5300159105 /* NSKeyedArchiverNSCodingCareerFoundry */ = {
 			isa = PBXGroup;
 			children = (
+				A72E2EFC2024F04300159105 /* Controller */,
+				A72E2EFB2024F03B00159105 /* View */,
+				A72E2EFA2024F02E00159105 /* Model */,
+				A72E2EFD2024F05500159105 /* Supporting Files */,
+			);
+			path = NSKeyedArchiverNSCodingCareerFoundry;
+			sourceTree = "<group>";
+		};
+		A72E2EFA2024F02E00159105 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A72E2EFB2024F03B00159105 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A72E2EEC2024CD5300159105 /* Main.storyboard */,
+				A72E2EF12024CD5300159105 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A72E2EFC2024F04300159105 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				A72E2EE62024CD5300159105 /* AppDelegate.swift */,
 				A72E2EE82024CD5300159105 /* MasterViewController.swift */,
 				A72E2EEA2024CD5300159105 /* DetailViewController.swift */,
-				A72E2EEC2024CD5300159105 /* Main.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A72E2EFD2024F05500159105 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A72E2EFE2024F09600159105 /* MainViewController+FileManager.swift */,
 				A72E2EEF2024CD5300159105 /* Assets.xcassets */,
-				A72E2EF12024CD5300159105 /* LaunchScreen.storyboard */,
 				A72E2EF42024CD5300159105 /* Info.plist */,
 			);
-			path = NSKeyedArchiverNSCodingCareerFoundry;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A72E2EEB2024CD5300159105 /* DetailViewController.swift in Sources */,
+				A72E2EFF2024F09600159105 /* MainViewController+FileManager.swift in Sources */,
 				A72E2EE92024CD5300159105 /* MasterViewController.swift in Sources */,
 				A72E2EE72024CD5300159105 /* AppDelegate.swift in Sources */,
 			);
@@ -280,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94Y8WE4GTP;
-				INFOPLIST_FILE = NSKeyedArchiverNSCodingCareerFoundry/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NSKeyedArchiverNSCodingCareerFoundry/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DarraghBlake.NSKeyedArchiverNSCodingCareerFoundry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94Y8WE4GTP;
-				INFOPLIST_FILE = NSKeyedArchiverNSCodingCareerFoundry/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NSKeyedArchiverNSCodingCareerFoundry/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DarraghBlake.NSKeyedArchiverNSCodingCareerFoundry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
