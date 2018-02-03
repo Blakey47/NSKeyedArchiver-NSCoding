@@ -13,7 +13,9 @@
 		A72E2EEE2024CD5300159105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72E2EEC2024CD5300159105 /* Main.storyboard */; };
 		A72E2EF02024CD5300159105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72E2EEF2024CD5300159105 /* Assets.xcassets */; };
 		A72E2EF32024CD5300159105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72E2EF12024CD5300159105 /* LaunchScreen.storyboard */; };
-		A72E2EFF2024F09600159105 /* MainViewController+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72E2EFE2024F09600159105 /* MainViewController+FileManager.swift */; };
+		A72E2EFF2024F09600159105 /* MasterViewController+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72E2EFE2024F09600159105 /* MasterViewController+FileManager.swift */; };
+		A72E2F032024F58A00159105 /* MasterViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72E2F022024F58A00159105 /* MasterViewController+UITableView.swift */; };
+		A72E2F052024F5FA00159105 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72E2F042024F5FA00159105 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,9 @@
 		A72E2EEF2024CD5300159105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A72E2EF22024CD5300159105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A72E2EF42024CD5300159105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A72E2EFE2024F09600159105 /* MainViewController+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+FileManager.swift"; sourceTree = "<group>"; };
+		A72E2EFE2024F09600159105 /* MasterViewController+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MasterViewController+FileManager.swift"; sourceTree = "<group>"; };
+		A72E2F022024F58A00159105 /* MasterViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MasterViewController+UITableView.swift"; sourceTree = "<group>"; };
+		A72E2F042024F5FA00159105 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 		A72E2EFA2024F02E00159105 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A72E2F042024F5FA00159105 /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,7 +100,8 @@
 		A72E2EFD2024F05500159105 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A72E2EFE2024F09600159105 /* MainViewController+FileManager.swift */,
+				A72E2EFE2024F09600159105 /* MasterViewController+FileManager.swift */,
+				A72E2F022024F58A00159105 /* MasterViewController+UITableView.swift */,
 				A72E2EEF2024CD5300159105 /* Assets.xcassets */,
 				A72E2EF42024CD5300159105 /* Info.plist */,
 			);
@@ -174,10 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72E2F052024F5FA00159105 /* Person.swift in Sources */,
 				A72E2EEB2024CD5300159105 /* DetailViewController.swift in Sources */,
-				A72E2EFF2024F09600159105 /* MainViewController+FileManager.swift in Sources */,
+				A72E2EFF2024F09600159105 /* MasterViewController+FileManager.swift in Sources */,
 				A72E2EE92024CD5300159105 /* MasterViewController.swift in Sources */,
 				A72E2EE72024CD5300159105 /* AppDelegate.swift in Sources */,
+				A72E2F032024F58A00159105 /* MasterViewController+UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

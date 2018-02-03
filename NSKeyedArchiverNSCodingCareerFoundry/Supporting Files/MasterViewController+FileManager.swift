@@ -13,7 +13,7 @@ extension MasterViewController {
         do {
             let fileManager = FileManager.default
             let documentDirectory = try fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-            let savePath = documentDirectory.appendingPathComponent("timestamps.bin")
+            let savePath = documentDirectory.appendingPathComponent("people.bin")
             return savePath.path
         } catch let ErrPath {
             print("Error getting path:", ErrPath )
